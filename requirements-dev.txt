@@ -1,0 +1,7 @@
+# Dev/test-only dependencies. Lambdas themselves have zero third-party
+# dependencies beyond boto3 (already present in the Lambda runtime), so
+# there is no requirements.txt for the handlers/layer -- nothing to install
+# at deploy time.
+pytest>=8.0
+moto[s3,dynamodb,secretsmanager]>=5.0
+boto3>=1.34

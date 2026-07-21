@@ -1,0 +1,14 @@
+# Copy to terraform.tfvars and fill in. Do not commit terraform.tfvars.
+
+aws_region             = "us-east-1"
+aviationstack_api_key  = "REPLACE_WITH_YOUR_AVIATIONSTACK_KEY"
+alarm_notification_email = "you@example.com"
+
+# Defaults in variables.tf (flights every 12h, reference monthly, 1 page
+# each) are sized for AviationStack's FREE plan: 100 requests/month TOTAL,
+# shared across every endpoint (~65/100 used at defaults). On a paid plan
+# with a higher/unlimited quota, uncomment and raise these:
+# flights_schedule_expression   = "rate(10 minutes)"
+# reference_schedule_expression = "cron(0 3 * * ? *)" # daily 03:00 UTC
+# flights_max_pages             = 5
+# reference_max_pages           = 50
