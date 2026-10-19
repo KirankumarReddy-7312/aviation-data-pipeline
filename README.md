@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Aviation Data Pipeline — Production Build
 
 A serverless, event-driven pipeline that ingests flight and reference data
@@ -279,3 +280,6 @@ run as-is. This build fixes:
   directly instead of through a backend.
 - AviationStack's free/lower tiers cap `limit` at 100 and may not expose all
   fields used here (e.g., `fleet_size` on `/airlines`) — check your plan.
+=======
+# aviation-data-pipeline
+>>>>>>> origin/main
